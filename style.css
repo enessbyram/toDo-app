@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Work+Sans:ital,wght@0,300;0,700;0,800;1,300;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(74deg, #363062, #435585, #818FB4, #F5E8C7);
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 60%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+input {
+    padding: 5px 10px;
+    margin: 10px;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    height: 40px;
+}
+
+#addBtn {
+    width: 15%;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    margin-right: 5px;
+    transition: 0.3s all ease;
+    height: 40px;
+}
+
+#clearBtn {
+    width: 15%;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    margin-right: 5px;
+    transition: 0.3s all ease;
+    height: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    #inputEl {
+        margin-left: 50px;
+        width: 100%;
+    }
+}
+
+#addBtn:hover, #clearBtn:hover {
+    background-color: transparent;
+}
+
+.doneBtn:hover {
+    background-color: transparent;
+}
+
+#inputEl:hover, #inputEl:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.small-container {
+    width: 95%;
+    padding: 5px 5px 5px 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-container li {
+    width: 75%;
+    word-wrap: break-word;
+}
+
+.doneBtn {
+    width: 23%;
+    height: 25px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    margin-right: 5px;
+    transition: 0.3s all ease;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    #addBtn{
+        font-size: 10px;
+        width: 20%;
+        margin: 1px;
+    }
+    #clearBtn {
+        font-size: 10px;
+        width: 28%;
+        margin: 1px;
+    }
+    #inputEl {
+        width: 100%;
+        margin: 1px;
+    }
+    .doneBtn {
+        font-size: 10px;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #addBtn{
+        font-size: 12px;
+        width: 20%;
+        margin: 1px;
+    }
+    #clearBtn {
+        font-size: 12px;
+        width: 28%;
+        margin: 1px;
+    }
+    #inputEl {
+        width: 100%;
+        margin: 1px;
+    }
+    .doneBtn {
+        font-size: 12px;
+        width: 30%;
+    }
+}
+
+.done {
+    text-decoration: line-through;
+    color: #666;
+}
